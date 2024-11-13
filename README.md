@@ -1,10 +1,8 @@
 # Study Tracker Discord Bot
 
- **GitHub Repo Link** : https://github.com/ShaunAlanJoseph/Study-Tracker-Discord-Bot
+ **GitHub Repo Link** : https://github.com/Venkat-jaswanth/Study-Tracker-Discord-Bot.git
  <br>
  **Link to Presentation** : https://www.canva.com/design/DAGUIOzmkGQ/RUpkwpSAyH1X3Y_wdKFkxQ/view?utm_content=DAGUIOzmkGQ&utm_campaign=designshare&utm_medium=link&utm_source=editor
-
-## 1. Project Planning
 
 ### Project Title:
 Study Tracker Discord Bot
