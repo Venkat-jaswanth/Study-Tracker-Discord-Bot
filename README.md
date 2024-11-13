@@ -61,43 +61,6 @@ The Entity-Relationship (ER) diagram visualizes the entities, attributes, and re
       - (N:1) Cards (card_id (PK), question, answer, card_type)
         - (1:1) DropdownCards (card_id (FK), option)
     <br>
-### ER Overview:
-```plaintext
-Users (user_id (PK), username, join_date) // Strong Entity
-    |
-    |<-- (1:N) -- Tasks (task_id (PK), user_id (FK), name, description, status, due_date, completion_time) // Strong Entity
-    |
-    |<-- (1:N) -- TimeTableEntry (tt_id (PK), user_id (FK), name, description, days, time, duration, ping) // Strong Entity
-    |                |
-    |                |<-- (1:N) -- TimeTableCompletedEntries (tt_id (FK), time, status) // Weak Entity
-    |
-    |<-- (1:N) -- FocusMode (user_id (FK), start, duration) // Weak Entity
-    |
-    |<-- (1:N) -- Playlist (playlist_id (PK), user_id (FK)) // Strong Entity
-    |                |
-    |                |<-- (1:N) -- SongEntry (playlist_id (FK), song_id) // Junction table for m:n relations. Represent this as a m:n relation
-    |                                |
-    |                                |<-- (N:1) -- Songs (song_id (PK), bytes, artist) // Strong Entity
-    |
-    |   
-    | 
-    |<-- (1:N) -- CardSet (card_set_id (PK), user_id (FK)) // Strong Entity
-    |               |
-                    |<-- (1:N) -- CardEntry (card_set_id (FK), card_id) // Junction table for m:n relations. Represent this as a m:n relation
-                                    |
-                                    |<-- (N:1) -- Cards (card_id (PK), question, answer, card_type) // Strong Entity
-                                                    |
-                                                    |<-- (1:1) -- DropdownCards (card_id (FK), option) // Weak Entity
-                                                    |
-                                                    |<-- (1:N) -- CardHistory (card_id (FK), time, status) // Weak Entity
-```
-
- 
-  
-### ER Diagram:
-
-<img src = "./design/er-diagram.png" >
-
 
 ### Logical Design:
 Convert the ER diagram into a relational schema:
