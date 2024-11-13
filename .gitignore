@@ -1,0 +1,11 @@
+# Files to Ignore
+.env
+temp*
+test.py
+
+
+# Folders to Ignore
+.venv/
+local/
+__pycache__/
+.vscode/
